@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        <div class="card px-0 col-lg">
+    <div class="col-md-4 ">
+        <div class="card px-0 col-md-12">
             <img class="card-img-top" src="https://meduza.io/impro/z3TJgWXrC50GiTi6elMaVUJ0_l-aFF-kB_Wz-5y31mQ/fill/0/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudF9v/dmVycmlkZXMvaW1h/Z2VzLzAwNC84NTQv/NTU0L292L29IdUs1/cmlkRzBha3gyUkNr/V1NXVWcuanBn.webp" alt="Card image cap">
             <div class="card-body pt-2">
                 <small class="text-uppercase font-weight-bold color">Новости</small>
