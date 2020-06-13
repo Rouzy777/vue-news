@@ -1,29 +1,32 @@
 <template>
-    <div class='container' id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="">
-                <a class="navbar-brand" href="#">News</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">News</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expand" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
-            <div class="ml-lg-3 collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <router-link
-                        v-for='item in links'
-                        :to="item.to"
-                        :key='item.to'>
-                        {{item.name}}
-                    </router-link>
+                <div class="collapse justify-content-center navbar-collapse" id="expand">
+                    <div class="col-6 my-lg-0 my-2 navbar-nav">
+                        <router-link
+                            class='text-uppercase ml-lg-auto text-light font-weight-bold custom-link'
+                            v-for='item in links'
+                            :to="item.to"
+                            :key='item.to'>
+                            {{item.name}}
+                        </router-link>
+                    </div>
+                    <div class="col-6 px-0">
+                        <div class="text-lg-right">
+                            <a target="_blank" href="https://github.com/Rouzy777/vue-news">
+                                <img src="https://img.shields.io/badge/Star-Github-brightgreen" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="">
-                <span>EN</span>
-                <span class='mx-2'>|</span>
-                <span>RU</span>
-            </div>
         </nav>
-        <router-view />
+        <router-view class='container px-0' />
     </div>
 </template>
 
@@ -33,9 +36,20 @@
             links: [
                 {
                     to: '/',
-                    name: 'Home'
+                    name: 'ALL'
                 }
             ]
         })
     }
 </script>
+
+<style media="screen">
+    .custom-link:hover {
+        text-decoration: none;
+        color: rgba(255,255,255,0.8)
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+</style>
