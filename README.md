@@ -1,6 +1,12 @@
-# vue-news
+# Vue news
 
+#### Home page
 ![Demo](src/demo/demo.png)
+
+## Special thanks to
+
+#### NewsAPI, which provides all news in this project
+![NewsAPI](https://newsapi.org/images/n-logo-border.png)
 
 ## Project setup
 ```
