@@ -1,5 +1,7 @@
 # vue-news
 
+![Demo](src/demo/demo.png)
+
 ## Project setup
 ```
 npm install
